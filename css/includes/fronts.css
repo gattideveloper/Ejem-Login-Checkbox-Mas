@@ -1,0 +1,43 @@
+/*---> Crimson_text <---*/
+@font-face{
+    font-family: "Crimson_Text-Bold"; /*--> subtitulo */
+    src:url(../../bookstores/fonts/Crimson_Text/CrimsonText-Bold.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: "Crimson_Text-Regular"; /*--> footer */
+    src:url(../../bookstores/fonts/Crimson_Text/CrimsonText-Regular.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: "Crimson_Text-SemiBold"; /*--> texto*/
+    src:url(../../bookstores/fonts/Crimson_Text/CrimsonText-SemiBold.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*---> Oxygen <---*/
+@font-face{
+    font-family: "Oxygen-Bold"; /*--> Titulo */
+    src:url(../../bookstores/fonts/Oxygen/Oxygen-Bold.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: "Oxygen-Light"; /*--> Logo */
+    src:url(../../bookstores/fonts/Oxygen/Oxygen-Light.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: "Oxygen-Regular"; /*--> menu */
+    src:url(../../bookstores/fonts/Oxygen/Oxygen-Regular.ttf);
+    font-weight: normal;
+    font-style: normal;
+}

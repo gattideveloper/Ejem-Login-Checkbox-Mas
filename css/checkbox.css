@@ -1,0 +1,311 @@
+@import url('includes/setting_style.css');
+
+#header h2{
+    display: block;
+    text-align: center;
+    font-family: var(--font-family--Title);
+    font-size: 28px;
+    font-weight: 800;
+    letter-spacing: 6px;
+    color: var(--color-00);
+    padding: 10px;
+}
+
+#main article{
+    width: 100%;
+    height: auto;
+}
+
+#main .intereses{
+    display: block;
+    text-align: center;
+    color: var(--color-01);
+}
+
+#main h3{
+    display: block;
+    font-family: var(--font-family--SubTitle);
+    font-size: 23px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    padding: 5px;
+}
+
+#main h4{
+    display: block;
+    font-family: var(--font-family--Text);
+    font-size: 19px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    padding-bottom: 10px;
+}
+
+/*########################################################################################*/
+        /*############################ Rubro #######################################*/
+/*########################################################################################*/
+.bloque{
+    color: var(--color-00);
+    overflow: hidden;
+}
+
+#opciones{
+    text-align: center;
+}
+
+#opciones .caja{
+    display: inline-block;
+}
+
+hr{
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border: 1px solid var(--color-00);
+}
+
+.containerRubro{
+    display: block;
+    position: relative;
+    cursor: pointer;
+    text-align: center;
+    font-family: var(--font-family--Text);
+    font-weight: normal;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.containerRubro p {
+    display: block;
+    position: relative;
+    top: 5px;
+}
+
+/*---> checkmarks */
+.containerRubro input[type="checkbox"] {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.checkmark {
+    border: 1px solid var(--color-03);
+    background-color: var(--color-02);
+    position: absolute;
+}
+
+.containerRubro:hover input ~ .checkmark {
+    background-color: var(--color-04);
+}
+
+.containerRubro input:checked ~ .checkmark {
+    background-color: var(--color-05);
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.containerRubro input:checked ~ .checkmark:after {
+    display: block;
+}
+
+.containerRubro .checkmark:after {
+    border: solid var(--color-06);
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+/*########################################################################################*/
+        /*############################ Boton de Ingresar #######################################*/
+/*########################################################################################*/
+#main .btnIngresar {
+    display: block;
+    width: 150px;
+    margin: 10px auto;       
+    padding: 2px;
+    font-family: var(--font-family--Menu);
+    font-size: 19px;
+    letter-spacing: 4px;
+    border: none;
+    position: relative;
+    background-color: transparent;
+}
+
+#main .btnIngresar::before {
+    -webkit-transition: all 0.85s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    transition: all 0.85s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    content: '';
+    width: 90%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#main .btnIngresar.rounded {
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+#main .btnIngresar.rounded .text-green {
+    color: var(--color-06);
+    mix-blend-mode: hard-light;
+}
+
+#main .btnIngresar.rounded::before {
+    border-radius: 50px;
+    width: 25%;
+    background: var(--color-05);
+}
+
+#main .btnIngresar.rounded:hover::before {
+    background: var(--color-05);
+    width: 100%;
+}
+
+/*##########################################################################################################################################################*/
+        /*################################################## RESPOSIVE #############################################################*/
+/*##########################################################################################################################################################*/
+/*Para monitores medianos*/
+@media (max-width: 1920px), (max-width: 1366px), (max-width: 1024px), (max-width: 768px){
+
+    /*========================================================================================*/
+        /*================================ ARTICLE ==================================*/
+    /*=======================================================================================*/
+
+    #articles h2{
+        width: 620px;
+        height: 75px;
+        line-height: 75px;
+        font-size: 35px;
+        letter-spacing: 2px;
+        margin-bottom: 25px;
+        margin-top: 10px;
+    }
+
+   /*========================================================================================*/
+            /*================================ RUBRO ==================================*/
+    /*=======================================================================================*/
+    .bloque{
+        width: 100%;
+        height: 100%;
+        margin:auto;
+    }
+
+    .bloque h3{
+
+        font-size: 22px;
+        font-family: var(--font-family--SubTitle);
+        letter-spacing: 3px;
+    }
+
+
+    #opciones .caja{
+        margin-right: 35px;
+    }
+
+    .containerRubro{
+        font-size: 22px;
+        letter-spacing: 2px;
+        padding-left: 35px;
+        margin-bottom: 12px;
+    }
+
+    .checkmark {
+        top: 4px;
+        left: 5px;
+        height: 25px;
+        width: 25px;
+    }
+
+    .containerRubro .checkmark:after {
+        left: 9px;
+        top: 5px;
+        width: 5px;
+        height: 10px;
+    }
+
+    /*------- Linea Horizontal ------*/
+    .linea-H {
+        width: 550px;
+        height: 5px;
+        top: -10px;
+    }
+
+}
+
+/*Para celular*/
+@media (max-width: 480px){
+
+
+    /*========================================================================================*/
+        /*================================ ARTICLE ==================================*/
+    /*=======================================================================================*/
+    #articles h2{
+        width: 100%;
+        height: 35px;
+        line-height: 35px;
+        font-size: 25px;
+        letter-spacing: 2px;
+        margin-bottom: 25px;
+        margin-top: 10px;
+    }
+
+   /*========================================================================================*/
+            /*================================ RUBRO ==================================*/
+    /*=======================================================================================*/
+    .bloque{
+        width: 100%;
+        height: 100%;
+        margin:auto;
+    }
+
+    .bloque h3{
+        font-size: 18px;
+        font-family: var(--font-family--SubTitle);
+        letter-spacing: 2px;
+        text-align: center;
+    }
+
+
+    #opciones .caja{
+        margin-right: 35px;
+    }
+
+    .containerRubro{
+        font-size: 22px;
+        letter-spacing: 2px;
+        padding-left: 35px;
+        margin-bottom: 12px;
+    }
+
+    .checkmark {
+        top: 4px;
+        left: 5px;
+        height: 25px;
+        width: 25px;
+    }
+
+    .containerRubro .checkmark:after {
+        left: 9px;
+        top: 5px;
+        width: 5px;
+        height: 10px;
+    }
+
+    /*------- Linea Horizontal ------*/
+    .linea-H {
+        width: 100%;
+        height: 5px;
+        top: -10px;
+    }
+
+}

@@ -1,0 +1,83 @@
+/*############################################ Import ############################################*/
+@import url('fronts.css');
+
+:root{
+    --color-00: #323232;
+    --color-01: #282828;
+    --color-02: #eeeeee;
+    --color-03: #000000; 
+    --color-04: #cccccc;
+    --color-05: #0f7ab8;
+    --color-06: #ffffff;
+
+    --rgba-00: rgba(81, 181, 248, 0.5);
+    --rgba-01: rgba(255,255,255, .2);
+    --rgba-02: rgba(255,255,255, .6);
+    --rgba-03: rgba(3,3,3, .1);
+    --rgba-04: rgba(3,3,3, .18);
+    --rgba-05: rgba(81, 181, 248, 0);
+
+    --font-family--Title: 'Oxygen-Bold';
+    --font-family--SubTitle: 'Crimson_Text-Bold';
+    --font-family--Text: 'Crimson_Text-SemiBold';
+ 
+    --font-family--Menu: 'Oxygen-Regular';
+    --font-family--Logo: 'Oxygen-Light';
+    --font-family--Footer: 'Crimson_Text-Regular';
+} 
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: #282828;
+}
+
+#container{
+    margin-left: 30px;
+    margin-right: 30px;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+header{
+    background-color: #fff;
+    border: 2px solid #323232;
+    box-shadow: 4px 2px 2px #6b6a6a;
+}
+
+main{
+    background-color: #ddd;
+    border-left: 2px solid #323232;
+    border-right: 2px solid #323232;
+    border-bottom: 2px solid #323232;
+    box-shadow: 4px 2px 2px #6b6a6a;
+}
+
+
+/**/
+a {
+    color: #000;
+}
+  
+footer{
+    background-color: #000;
+    border-left: 2px solid #323232;
+    border-right: 2px solid #323232;
+    border-bottom: 2px solid #323232;
+    box-shadow: 4px 2px 2px #6b6a6a;
+}
+
+#footer{
+    display: flex;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    flex-wrap: nowrap;
+    align-content: center;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
